@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+  <img src="{{ url_for('static', filename=sample) }}" style="position:absolute; left:35%; top:20%; box-shadow: 1px 2px 4px rgba(0, 0, 0, .9);; " />
+                                                                                              <!-- Här kommer den generade bilden visas med hjälp av
+                                                                                                    variablen sample_out_html    -->
+{% endblock %}

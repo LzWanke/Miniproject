@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  {% from "_formhelpers.html" import render_field %}
+  <h1 style="font-family: 'Cairo', sans-serif;">Make your meme</h1>
+  <form method="POST" action="/" >
+   <dl style="font-family: 'Cairo', sans-serif; font-size:20px;">
+    {{ form.csrf_token }}
+    {{ render_field(form.text1) }}
+    {{ render_field(form.text2) }}
+    {{ render_field(form.bild) }}
+
+    <input type="submit" value="Make the meme!">
+    </dl>
+</form>
+<p style="position:absolute; left:23%; top:55%; font-size:50px; font-family: 'Cairo', sans-serif;">1</p>
+<p style="position:absolute; left:65%; top:55%; font-size:50px; font-family: 'Cairo', sans-serif;">2</p>
+<img src="{{ url_for('static', filename='pictures/sample_in/1.jpg') }}" style="position:absolute; left:5%; top:70%; " />
+<img src="{{ url_for('static', filename='pictures/sample_in/2.jpg') }}" style="position:absolute; left:50%; top:70%;  " />
+
+{% endblock %}

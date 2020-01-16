@@ -1,0 +1,51 @@
+<html>
+    <head>
+
+      <title>Welcome to the offical meme generator</title>
+      <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+      <script>
+
+      </script>
+      <style> /* Lite css*/
+      body {
+          background-image: url("https://i.pinimg.com/originals/c8/25/47/c825478d6d1fc2ce84f150f98f954e1d.gif");
+          background-size: cover;
+          color: white;
+          text-align: center;
+          }
+          input[type=text] {
+
+    color: white;
+    width: 20%;
+    font-size: 15px;
+    padding: 12px 20px;
+    text-align: center;
+    margin: 8px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    font-family: 'Cairo', sans-serif;
+  }
+  input[type=submit] {
+  font-family: 'Cairo', sans-serif;
+font-size: 15px;
+left: 20%;
+  width: 20%;
+  background-color: RGBA(0, 0, 0, 0.6);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+      </style>
+
+    </head>
+    <body>
+        <div>MEME Generator: <a href="/">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
